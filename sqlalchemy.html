@@ -50,7 +50,6 @@
                             </button>
                             <div class="dropdown-menu">
                                 <a class="dropdown-item" href="HCO2.html">Happiness vs. CO2</a>
-                                <a class="dropdown-item" href="heatmap.html">Heatmap</a>
                                 <a class="dropdown-item" href="correlation.html">Correlation</a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="final.html">Cleaned Data</a>
@@ -62,6 +61,68 @@
             </div>
         </nav>
 
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8">
+                        <div class="card">
+                                <div class="card-body">
+                                    <a href="Resources/sqlalc1.png"><img src="Resources/sqlalc1.png" width=100%></a>
+                                </div>
+                        </div>
+                </div>
+                <div class="col-md-4">
+                            <div class="card" id="one">
+                                    <div class="card-body">
+                                      <h5 class="card-title">SQL Alchemy Connection</h5>
+                                        <p class="card-text">
+                                            To incorporate our World Happiness data we utilized SQL alchemy to import our table of data.   We then did a select all of the data and appended only if a country name existed.
+                                        </p>
+                                    </div>
+                            </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                        <div class="card" style="background-color: white;">
+                                <div class="card-body">
+                                    <a href="Resources/sqlalc2.png"><img src="Resources/sqlalc2.png" width=100%></a>
+                                </div>
+                        </div>
+                </div>
+                <div class="col-md-4">
+                            <div class="card" id="one">
+                                    <div class="card-body">
+                                      <h5 class="card-title">SQL Data Confirm</h5>
+                                        <p class="card-text">
+                                            To ensure our data was written into our new dataframe, we utilized a .head() from the sql query.
+                                        </p>
+                                    </div>
+                            </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                        <div class="card">
+                                <div class="card-body">
+                                    <a href="Resources/sqlalc3.png"><img src="Resources/sqlalc3.png" width=100%></a>
+                                </div>
+                        </div>
+                </div>
+                <div class="col-md-4">
+                            <div class="card" id="one">
+                                    <div class="card-body">
+                                      <h5 class="card-title">MySQL Workbench</h5>
+                                        <p class="card-text">
+                                            As a final check to ensure our data was in our connection, we looked back at our SQL workbench and did a select * to see that all our data did exist.
+                                        </p>
+                                    </div>
+                            </div>
+                </div>
+
+            </div>
+    </div>
     </body>
 
 

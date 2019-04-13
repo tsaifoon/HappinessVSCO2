@@ -39,7 +39,7 @@
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="WHcsv.html">World Happiness CSV</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">CO2 CSV</a>
+                        <a class="dropdown-item" href="CO2csv.html">CO2 CSV</a>
                     </div>
                   </div>
                 </li>
@@ -50,7 +50,6 @@
                             </button>
                             <div class="dropdown-menu">
                                 <a class="dropdown-item" href="HCO2.html">Happiness vs. CO2</a>
-                                <a class="dropdown-item" href="heatmap.html">Heatmap</a>
                                 <a class="dropdown-item" href="correlation.html">Correlation</a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="final.html">Cleaned Data</a>
@@ -61,6 +60,70 @@
                 </ul>
             </div>
         </nav>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8">
+                        <div class="card">
+                                <div class="card-body">
+                                    <a href="Resources/dataframe1.png"><img src="Resources/dataframe1.png" width=100%></a>
+                                </div>
+                        </div>
+                </div>
+                <div class="col-md-4">
+                            <div class="card" id="one">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Import of the CO2 Data</h5>
+                                        <p class="card-text">
+                                            Utilizing Jupyter Notebook the data was imported into two columns:  "Country Name" and "2017" for each countries name and CO2 per capita for 2017.
+                                        </p>
+                                    </div>
+                            </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                        <div class="card" style="background-color: white;">
+                                <div class="card-body">
+                                    <a href="Resources/dataframe2.png"><img src="Resources/dataframe2.png" width=100%></a>
+                                </div>
+                        </div>
+                </div>
+                <div class="col-md-4">
+                            <div class="card" id="one">
+                                    <div class="card-body">
+                                      <h5 class="card-title">First Data Clean</h5>
+                                        <p class="card-text">
+                                            Due to the differences in naming convention between our data, it was a necessary step to replace certain country names to match.  For example, France and Monaco should be France.
+                                        </p>
+                                    </div>
+                            </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                        <div class="card">
+                                <div class="card-body">
+                                    <a href="Resources/dataframe3.png"><img src="Resources/dataframe3.png" width=100%></a>
+                                </div>
+                        </div>
+                </div>
+                <div class="col-md-4">
+                            <div class="card" id="one">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Ranking</h5>
+                                        <p class="card-text">
+                                            Lastly, we reordered by Happiness Score so that we could see trends versus CO2 per capita and the RANK of CO2.  We would later utilize this data for our scatterplot.
+                                        </p>
+                                    </div>
+                            </div>
+                </div>
+
+            </div>
+    </div>
+
 
     </body>
 
