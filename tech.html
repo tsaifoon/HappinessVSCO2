@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>World Happiness Index</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand btn btn-info" href="index.html">😃</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Team <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tech.html">Technical Document</a>
+                </li>
+                <li>
+                  <div class="btn-group">
+                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color: lightsalmon;">
+                        Data
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="sqlalchemy.html">SQL Alchemy</a>
+                        <a class="dropdown-item" href="dataframe.html">Dataframe</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="WHcsv.html">World Happiness CSV</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="CO2csv.html">CO2 CSV</a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                    <div class="btn-group">
+                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color: rgb(102, 219, 255);">
+                                Analysis
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="HCO2.html">Happiness vs. CO2</a>
+                                <a class="dropdown-item" href="heatmap.html">Heatmap</a>
+                                <a class="dropdown-item" href="correlation.html">Correlation</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="final.html">Cleaned Data</a>
+                            </div>
+                    </div>
+                </li>
+
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container-fluid">
+			<div class="row">
+                <div class="col-md-6">
+                        <div class="card" style="background-color: white";>
+                                <div class="card-body">
+                                    <a href="https://www.kaggle.com/unsdsn/world-happiness"><img src="Resources/kaggle.PNG" width=100%></a>
+                                </div>
+                        </div>
+                </div>
+				<div class="col-md-6">
+                            <div class="card" id="one">
+                                    <div class="card-body">
+                                      <h5 class="card-title">What Does the Data Mean?</h5>
+                                        <p class="card-text">
+                                            The first data set pulled is the “World Happiness Report” <a href="https://www.kaggle.com/unsdsn/world-happiness" style=color:lightsalmon>https://www.kaggle.com/unsdsn/world-happiness</a> from <a href="Kaggle.com" style=color:lightsalmon>Kaggle.com</a>. This intent of this survey was to display global happiness and was released by the United Nations to rank countries around the world. The report also rates other indicators via survey other indicators such as economics, health, and public policies. 
+                                                The scores in this data set are pulled from the Gallup World Poll 2017 data. The rating scale is a simple 0-10 scale from a nationally represented sample size. The other factors (columns) from this data set are ratings given by scholars in their respective fields which are independent from the overall happiness score. 
+                                                The countries are organized from highest ranking (Norway) to lowest ranking (Central African Republic).
+                                            </p>
+                                      <a href="#six" class="card-link">Last</a>
+                                      <a href="#two" class="card-link">Next</a>
+                                    </div>
+                            </div>
+                </div>
+
+			</div>
+            <div class ="row">
+                    <div class="col-md-6">
+                            <div class="card" id="two">
+                                    <div class="card-body">
+                                      <h5 class="card-title">CO2 Emissions -> What’s the Affect?</h5>
+                                        <p class="card-text">
+                                                CO2 Emission is carbon dioxide discharge from fossil fuels. As humankind has increased its fossil fuel use it has increased the CO2 emissions into the atmosphere. CO2 is measured by metric tons per year. The CO2 emissions can affect people’s health. As a column in the original data set we thought this may be an interesting contributing factor. 
+                                                We will try to do some data analysis to find a correlations of the two points. That is the business and point of interest. Let the database building and correlation discovery begin!                                                
+                                            </p>
+                                      <a href="#one" class="card-link">Previous</a>
+                                      <a href="#three" class="card-link">Next</a>
+                                    </div>
+                            </div>
+                    </div>
+                    <div class="col-md-6">
+                            <div class="card" style="background-color: white";>
+                                    <div class="card-body">
+                                        <img src="Resources/CO2.jpg" width=100%>
+                                    </div>
+                            </div>
+                    </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-7">
+                            <div class="card" id="three">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Extract – Transform - Load</h5>
+                                        <p class="card-text">
+                                            <ul>
+                                                <li><strong>Extract</strong> is the process of reading data from a database. In this stage, the data is collected, often from multiple and different types of sources.</li>
+                                                <li><strong>Transform</strong> is the process of converting the extracted data from its previous form into the form it needs to be in so that it can be placed into another database. Transformation occurs by using rules or lookup tables or by combining the data with other data.</li>
+                                                <li><strong>Load</strong> is the process of writing the data into the target database.</li>
+                                            </ul>
+                                        </p>
+                                      <a href="#two" class="card-link">Previous</a>
+                                      <a href="#five" class="card-link">Next</a>
+                                    </div>
+                            </div>
+                </div>
+                <div class="col-md-5">
+                        <div class="card" id="four" style="background-color:navy";>
+                                <div class="card-body">
+                                  <h5 class="card-title">The Process…</h5>
+                                    <p class="card-text">
+                                            The two data sets were stored in CSV files. Jupyter Notebook was used to first upload the datasets (read csv). A new data frame was created to capture the relevant columns needed from both files. From the happiness csv, the country and ranking; from the CO2 file the corresponding emission rates was merged. 
+                                            A connection to the database was created (create engine). Pandas was used to load the csv converted data frame into the database. After that data has been submitted confirmation is done by querying the database.                                                     
+                                        </p>
+                                </div>
+                        </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class = "col-md-7">
+
+                </div>
+                <div class = "col-md-5">
+                        <div class="card" id="challenge_one" style="background-color: darkslategrey";>
+                                <div class="card-body">
+                                  <h5 class="card-title">Challenges...</h5>
+                                    <p class="card-text">
+                                            The issues incurred during the ETL process came with displaying and standardizing the datasets. The first merge did not produce the correct data combination, so the join type was changed. Also the headers were changed to make simple and normalize the table  
+                                            The next issue was the country names. Gaps were produced in the result because of naming schema; this was corrected to give more outputs. However there were still some items without matching outcomes. A dropna.() function was used to remove NaN results to clean up the data.                                                   
+                                        </p>
+                                </div>
+                        </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-7">
+                            <div class="card" id="five">
+                                    <div class="card-body">
+                                      <h5 class="card-title">HTML –CSS -Javascript</h5>
+                                        <p class="card-text">
+                                            <ul>
+                                                <li><strong>HTML</strong> - is the language used to create web pages and web applications.</li>
+                                                <li><strong>CSS</strong> - is a style sheet language used for describing the presentation of a document written in. </li>
+                                                <li><strong>Javascript</strong> - a programming language which enhances the interactive experience on HTML pages.</li>
+                                            </ul>
+                                        </p>
+                                      <a href="#four" class="card-link">Previous</a>
+                                      <a href="#one" class="card-link">Next</a>
+                                    </div>
+                            </div>
+                </div>
+                <div class="col-md-5">
+                            <div class="card" id="six" style="background-color:navy";>
+                                    <div class="card-body">
+                                      <h5 class="card-title">The Process…</h5>
+                                        <p class="card-text">
+                                                All the information from the data set (including this technical document) is uploaded onto HTML pages to give enhanced presentation capabilities. The styling of the website was done with some CSS and Javascript language loaded onto a style sheet. Enhancements including a sliding photo bar to show the team, a navigation bar to give access to multiple pages, and use of color coding to make user friendly. 
+                                                The first page gives explanation and introduction to the overall project and business plan. Page two references the technical document for guidance. The third page gives insight to the actual database information.                                                 
+                                        </p>
+                                    </div>
+                            </div>
+                </div>
+                <div class="row">
+                        <div class = "col-md-7">
+        
+                        </div>
+                        <div class = "col-md-5">
+                                <div class="card" id="challenge_two" style="background-color: darkslategrey";>
+                                        <div class="card-body">
+                                          <h5 class="card-title">Challenges...</h5>
+                                            <p class="card-text">
+                                                    The biggest challenges were. … 
+                                                    creating and formatting the proper margins. Proper alignment within the in individual web pages was a tedious task to get the look just right. In addition, image sizing and parameters were a bit of trial and error before it fit in the right array.                                                  
+                                            </p>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+
+                <div class="row" style="margin: 0 auto;" >
+                    <div class="card" id="challenge_two" style="background-color: lightcyan;">
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: black;">Download our Technical Document Here!</h5>
+                                <p class="card-text">
+                                    <a href="https://drive.google.com/file/d/1IIrjAwjo6myO0Kl1OMWy9LJgLLW-ErDO/view?usp=sharing">World Happiness ETL Technical Documentation.docx</a>
+                                </p>
+                            </div>
+                    </div>
+                    <div class="card" id="challenge_two" style="background-color: lightcyan;">
+                            <div class="card-body">
+                                <h5 class="card-title" style="color: black;">Go to the Data!</h5>
+                                <p class="card-text">
+                                    <a href="HCO2.html">Next</a>
+                                </p>
+                            </div>
+                    </div>
+                </div>
+                
+            </div>	
+			
+		</div>
+
+    </body>
+
+
+
+</html>
+</html>

@@ -1,0 +1,54 @@
+h5{
+    color: cyan;
+}
+h6{
+    color: cyan;
+}
+
+h3{
+    color: white;
+}
+p{
+    color:white;
+}
+h1{
+    color: white;
+}
+li{
+    color:white;
+}
+
+.carousel-inner{
+    padding: 40px;
+    height: 600px;
+    width: 600px;
+    margin: auto;
+ }
+
+ 
+ body{
+     background: lightgoldenrodyellow;
+ }
+
+ .navbar-nav{
+    margin-left: 70%;
+}
+
+.navbar{
+    background-color: lightcyan;
+}
+
+.jumbotron{
+    margin: 40px;
+    background-image: url("Resources/2bbqxwz1hvr21.jpg");
+    background-size: cover;
+}
+
+.card{
+    margin: 20px 20px 20px 20px;
+    background-color: lightslategray;
+}
+
+.card-link{
+    color: lightsalmon; 
+}
